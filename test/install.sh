@@ -1,4 +1,4 @@
-#totally not copied installer
+#totally not copied installer from there https://github.com/WeLikeToCodeStuff/ptero-1.0-theme-install
 php /var/www/pterodactyl/artisan down
 cd /var/www/pterodactyl/resources/scripts
 rm -rf main.css
