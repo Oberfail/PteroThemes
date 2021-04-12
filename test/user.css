@@ -1,14 +1,12 @@
-
-/* Changes these to change the colors of the panel!!! */
-
 :root {
-  --main-bg-color: #36393F !important;
-  --secondary-bg-color: #32353B !important;
-  --secondary-bg-color-alt: #2F3136 !important;
-  --accent-color: #7289DA !important;
-  --accent-secondary-color: #43B581 !important;
+  --main-bg-color: #282a36 !important;
+  --secondary-bg-color: #242631 !important;
+  --secondary-bg-color-alt: #20222c !important;
+  --accent-color: #bd93f9 !important;
+  --accent-secondary-color: #bd93f9 !important;
   --text-color: #fafafa !important;
   --border-radius: 15px !important;
+  --accent-light: #d4b5ff !important;
 }
 
 /* Changes Background */
@@ -90,10 +88,18 @@ body, .content-wrapper {
 .iZqkRd,
 .chAlWS,
 .iTwxpv,
-.skin-blue .main-header .logo {
+.skin-blue .main-header .logo,
+.jVPRyV,
+.cvDOmk,
+.dRhlIo .icon,
+.hmodKy,
+.beRAKh {
 	color: var(--text-color) !important;
 }
 
+.gqmhN {
+	display: none !important;
+}
 
 /* Changes disabled switch */
 
@@ -147,7 +153,7 @@ body, .content-wrapper {
 .jqQFoq .status-bar,
 .bEKRkc .status-bar,
 .dRhlIo .status-bar {
-	height: 7vw !important;
+	height: 100vw !important;
 	right: -.25vw !important;
 }
 
@@ -223,11 +229,13 @@ code,
 .btn-primary,
 .btn-warning,
 .btn-success,
+.btn-danger,
 .alert-danger,
-pre,
 .input-group .input-group-addon,
 .select2-container--default .select2-selection--single,
-.select2-container--default .select2-selection--multiple {
+.select2-container--default .select2-selection--multiple,
+.content-header>.breadcrumb,
+body > div > div > section.content > div:nth-child(3) > div.col-sm-8 > div > div:nth-child(2) > div > div.box-body.table-responsive > pre {
 	border-color: var(--accent-secondary-color) !important;
 	background-color: var(--secondary-bg-color-alt) !important;
 	border-radius: var(--border-radius) !important;
@@ -321,7 +329,7 @@ pre,
 }
 
 ::-webkit-scrollbar {
-	background: var(--secondary-bg-color) !important;
+	background: var(--main-bg-color) !important;
 
 }
 
@@ -334,7 +342,7 @@ pre,
 	background-color: var(--secondary-bg-color-alt) !important;
 	border-radius: var(--border-radius) !important;
 	transform: scale(0.95) !important;
-    margin-top: .25vw !important;
+   	margin-top: .25vw !important;
 }
 
 
@@ -494,7 +502,7 @@ hr {
 
 /* Removes port bubble */
 
-.cxwlaX {
+.cxwlaX, .bceLDp {
 	background: var(--secondary-bg-color-alt) !important;
 }
 
@@ -503,3 +511,204 @@ hr {
 .xterm .xterm-viewport::-webkit-scrollbar {
 	background: var(--secondary-bg-color-alt) !important;
 }
+
+/* Fixes login page */
+
+.eWTBmo, .kZiVrb, .kZiVrb:hover, .kdZiuU, .fMOYf, .fMOYf:hover {
+	color: var(--text-color) !important;
+}
+
+.dVhqhq {
+	background-color: var(--secondary-bg-color) !important;
+	border-color: transparent !important;
+	box-shadow: none !important;
+}
+
+.fPcGHZ:not([type="checkbox"]):not([type="radio"]) {
+	border-color: var(--accent-color) !important;
+	background-color: var(--secondary-bg-color-alt) !important;
+	border-radius: var(--border-radius) !important;	
+}
+
+/* Fixes search button */
+
+.btn-default {
+	border-color: var(--accent-secondary-color) !important;
+	background-color: var(--secondary-bg-color-alt) !important;
+	border-radius: var(--border-radius) !important;	
+}
+
+.btn-default {
+	margin-right: .25vw !important;
+}
+
+.input-group .form-control {
+	margin-right: .25vw !important;
+}
+
+.bg-red,
+.bg-yellow,
+.bg-aqua,
+.bg-blue,
+.bg-light-blue,
+.bg-green,
+.bg-navy,
+.bg-teal,
+.bg-olive,
+.bg-lime,
+.bg-orange,
+.bg-fuchsia,
+.bg-purple,
+.bg-maroon,
+.bg-black,
+.bg-red-active,
+.bg-yellow-active,
+.bg-aqua-active,
+.bg-blue-active,
+.bg-light-blue-active,
+.bg-green-active,
+.bg-navy-active,
+.bg-teal-active,
+.bg-olive-active,
+.bg-lime-active,
+.bg-orange-active,
+.bg-fuchsia-active,
+.bg-purple-active,
+.bg-maroon-active,
+.bg-black-active,
+.callout.callout-danger,
+.callout.callout-warning,
+.callout.callout-info,
+.callout.callout-success,
+.alert-success,
+.alert-danger,
+.alert-error,
+.alert-warning,
+.alert-info,
+.label-danger,
+.label-info,
+.label-warning,
+.label-primary,
+.label-success,
+.modal-primary .modal-body,
+.modal-primary .modal-header,
+.modal-primary .modal-footer,
+.modal-warning .modal-body,
+.modal-warning .modal-header,
+.modal-warning .modal-footer,
+.modal-info .modal-body,
+.modal-info .modal-header,
+.modal-info .modal-footer,
+.modal-success .modal-body,
+.modal-success .modal-header,
+.modal-success .modal-footer,
+.modal-danger .modal-body,
+.modal-danger .modal-header,
+.modal-danger .modal-footer {
+	border-radius: var(--border-radius) !important;
+
+}
+
+/* Fixes server list number */
+
+.xkLPZ {
+	border-radius: 100% !important;
+}
+
+.gKREGI:not(:disabled) {
+	background-color: var(--accent-light) !important;
+	border-color: var(--accent-light) !important;
+}
+
+.gKREGI:hover:not(:disabled) {
+	background-color: var(--accent-color) !important;
+	border-color: var(--accent-color) !important;	
+}
+
+.bRKaoy:hover:not(:disabled) {
+	background-color: var(--accent-color) !important;
+	border-color: var(--accent-color) !important;	
+}
+
+/* Fixes file editor */
+
+.CodeMirror-scroll,
+.CodeMirror-sizer,
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber {
+	border-color: var(--accent-color) !important;
+	background-color: var(--secondary-bg-color) !important;
+	color: var(--text-color) !important;
+}
+
+/* Fixes Admin areas. */
+
+.box-body {
+	transform: scale(.98) !important;
+}
+
+.ifNwiE,
+.LdCMD,
+.fIhPZJ,
+.cFegvH,
+.box-body {
+	transform: scale(.98) !important;
+}
+
+.info-box,
+.info-box-icon {
+	border-radius: 15px !important;
+}
+
+body > div > div > section.content > div:nth-child(3) > div.col-sm-8 > div > div.box-body > pre, textarea.form-control, input.form-control, body > div > div > section.content > div:nth-child(3) > div.col-sm-8 > div > div.box-body > pre {
+	border-color: var(--accent-secondary-color) !important;
+	background-color: var(--secondary-bg-color-alt) !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.hNrKxe, .dMZZHB, .dHRxAp, .epSLdr, .bsrsDD, .ffSVrP, .fZqvbJ, .fLfaAY, .bsSkeI, .jIIIrT, .EwfIk, .izAmwE, code, .select2-container--default .select2-selection--multiple .select2-selection__choice, .select2-search--inline .select2-search__field:focus, .select2-container--default .select2-search--inline .select2-search__field {
+	background: transparent !important;
+	color: #fafafa !important;
+}
+
+/* Fixes nest, eggs, and mounts */
+
+.modal-body, .modal-header, .modal-footer {
+	background-color: var(--secondary-bg-color) !important;
+	border-color: var(--secondary-bg-color-alt) !important;
+}
+
+textarea.form-control, input.form-control {
+	border-color: var(--accent-secondary-color) !important;
+	background-color: var(--secondary-bg-color-alt) !important;
+	border-radius: var(--border-radius) !important;
+}
+
+/* Fixes selection for admin pages. */
+
+.select2-results__option {
+	color: #fafafa !important;
+	background: #282a36  !important;
+}
+
+.select2-container--open .select2-dropdown--below {
+	margin-top: .25vw !important; 
+	border: none !important;
+	border-radius: 15px !important;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+	border-radius: 15px !important;
+}
+
+.select2-dropdown {
+	border-radius: 15px !important;
+	background: transparent !important;
+	border: none !important;
+}
+
+.select2-results__options::-webkit-scrollbar, .select2-results::-webkit-scrollbar {
+	display: none !important;
+}
+
